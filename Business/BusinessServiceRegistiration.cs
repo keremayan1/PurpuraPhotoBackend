@@ -9,6 +9,7 @@ namespace Business
         public static IServiceCollection AddBusinessServices(this IServiceCollection services)
         {
             services.AddScoped<IAlbumStatusService, AlbumStatusManager>();
+            services.AddScoped<IAlbumService, AlbumManager>();
             return services;
 
         }

@@ -11,6 +11,7 @@ namespace DataAccess
         {
             services.AddDbContext<SQLContext>();
             services.AddScoped<IAlbumStatusDal, AlbumStatusDal>();
+            services.AddScoped<IAlbumDal, AlbumDal>();
             return services;
         }
 
